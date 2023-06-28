@@ -317,7 +317,6 @@
             "capacityReservationSentinel": "[basics('capacityReservationSentinel')]",
             "enableDiagnostics": "[steps('settings').enableDiagnostics]",
             "enableDataConnectors": "[steps('dataConnectors').enableDataConnectors]",
-            "aadStreams": "[steps('dataConnectors').aadStreams]",
             "location": "[location()]",
             "rgName": "[basics('rgName')]"
         }
