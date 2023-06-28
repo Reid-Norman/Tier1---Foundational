@@ -6,7 +6,7 @@
         "config": {
             "isWizard": false,
             "basics": {
-                "description": "**Microsoft Sentinel All-In-One** deployment, see more information about this project [here](https://github.com/Azure/Azure-Sentinel/Tools/Sentinel-All-In-One/).",
+                "description": "**Microsoft Sentinel All-In-One Foundational** deployment, see more information about this project [here](https://github.com/Azure/Azure-Sentinel/Tools/Sentinel-All-In-One/).",
                 "location": {
                     "label": "Location",
                     "toolTip": "Location for all resources",
@@ -317,6 +317,7 @@
             "capacityReservationSentinel": "[basics('capacityReservationSentinel')]",
             "enableDiagnostics": "[steps('settings').enableDiagnostics]",
             "enableDataConnectors": "[steps('dataConnectors').enableDataConnectors]",
+            "aadStreams": "[steps('dataConnectors').aadStreams]",
             "location": "[location()]",
             "rgName": "[basics('rgName')]"
         }
