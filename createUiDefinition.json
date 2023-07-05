@@ -228,38 +228,8 @@
                           "text": "Please select which settings you would like to enable in your Microsoft Sentinel environment"
                       }
                   },
-                  {
-                      "name": "enableUeba",
-                      "type": "Microsoft.Common.CheckBox",
-                      "label": "Enable User Entity Behavior Analytics (UEBA)? Global Admin or Security Admin permission required.",
-                "toolTip": "This will only enable synchronization with identity providers. Data sources need to be enabled separately. [Learn more](https://learn.microsoft.com/azure/sentinel/identify-threats-with-entity-behavior-analytics)",
-                      "constraints": {
-                          "required": false,
-                          "validationMessage": "Please choose"
-                      }
-                  },
-                  {
-                      "name": "identityProviders",
-                      "type": "Microsoft.Common.DropDown",
-                      "label": "Select which Identity Providers will be synchronized with UEBA",
-                      "placeholder": "Choose identity provider",
-                      "multiselect": true,
-                      "toolTip": "Select the identity providers that you would like to enable for UEBA",
-                      "constraints": {
-                          "allowedValues": [
-                              {
-                                  "label": "Azure Active Directory",
-                                  "value": "AzureActiveDirectory"
-                              },
-                              {
-                                  "label": "Active Directory (requires Microsoft Defender for Identity)",
-                                  "value": "ActiveDirectory"
-                              }
-                          ],
-                          "required": false
-                      },
-                      "visible": "[if(steps('settings').enableUeba, true, false)]"
-                  },
+
+
                   {
                       "name": "enableDiagnostics",
                       "type": "Microsoft.Common.CheckBox",
