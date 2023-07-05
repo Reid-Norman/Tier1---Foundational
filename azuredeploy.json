@@ -145,7 +145,7 @@
             "metadata": {
                 "description": "Whether or not UEBA should be enabled"
             },
-            "defaultValue": true
+            "defaultValue": false
         },
         "identityProviders": {
             "type": "array",
@@ -155,7 +155,11 @@
             "defaultValue": []
         },
         "enableDiagnostics": {
-            "type": "bool"
+            "type": "bool",
+            "metadata": {
+                "description": "Enable health diagnostics settings for Analytics rules, Data Connectors and Automation rules."
+            },
+            "defaultValue": true
         },
         "enableMLAlerts": {
             "type": "bool",
@@ -176,7 +180,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Tools/Sentinel-All-In-One/"
+            "defaultValue": "https://raw.githubusercontent.com/Reid-Norman/Tier1---Foundational/"
         }
     },
     "variables": {
@@ -200,7 +204,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[uri(parameters('_artifactsLocation'), 'v2/LinkedTemplates/workspace.json')]",
+                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/workspace.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -245,7 +249,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[uri(parameters('_artifactsLocation'), 'v2/LinkedTemplates/settings.json')]",
+                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/settings.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -277,7 +281,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[uri(parameters('_artifactsLocation'), 'v2/LinkedTemplates/dataConnectors.json')]",
+                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/dataConnectors.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -315,7 +319,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[uri(parameters('_artifactsLocation'), 'v2/LinkedTemplates/solutionsAndAlerts.json')]",
+                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/solutionsAndAlerts.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
