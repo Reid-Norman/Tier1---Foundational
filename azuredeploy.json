@@ -180,7 +180,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/Reid-Norman/Tier1---Foundational/"
+            "defaultValue": "https://raw.githubusercontent.com/Reid-Norman/Tier1---Foundational/main/"
         }
     },
     "variables": {
