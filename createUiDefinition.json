@@ -648,7 +648,6 @@
             "capacityReservationLA": "[basics('capacityReservationLA')]",
             "pricingTierSentinel": "[basics('pricingTierSentinel')]",
             "capacityReservationSentinel": "[basics('capacityReservationSentinel')]",
-            "identityProviders": "[steps('settings').identityProviders]",
             "enableDiagnostics": "[steps('settings').enableDiagnostics]",
             "enableSolutions1P": "[steps('solutions').enableSolutions1P]",
             "enableSolutionsEssentials": "[steps('solutions').enableSolutionsEssentials]",
